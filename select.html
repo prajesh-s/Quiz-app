@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Select a Quiz</h1>
+    <p>Welcome, <span id="user"></span>!</p>
+    <select id="quizType">
+      <option value="python">Python</option>
+      <option value="java">Java</option>
+      <option value="javascript">JavaScript</option>
+    </select>
+    <button onclick="startQuiz()">Start Quiz</button>
+    <button onclick="logout()">Logout</button>
+  </div>
+
+  <script>
+    if(!localStorage.getItem("loggedInUser")){
+      window.location.href="login.html";
+    }
+    document.getElementById("user").textContent=localStorage.getItem("loggedInUser");
+
+    function startQuiz(){
+      const selected=document.getElementById("quizType").value;
+      localStorage.setItem("quizType",selected);
+      window.location.href="quiz.html";
+    }
+
+    function logout(){
+      localStorage.removeItem("loggedInUser");
+      window.location.href="login.html";
+    }
+  </script>
+</body>
+</html>
