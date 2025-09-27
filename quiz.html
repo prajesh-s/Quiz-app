@@ -39,13 +39,17 @@
   {question:"What is the output of bool(0)?",choices:["True","False","0","Error"],correct:"False"}
 ],
       java: [
-        {question:"Java is ___ typed language?",choices:["Weakly","Strongly","Dynamically","None"],correct:"Strongly"},
-        {question:"Which keyword is used to inherit a class?",choices:["this","extends","super","implements"],correct:"extends"}
-      ],
-      javascript: [
-        {question:"Which language runs in a web browser?",choices:["Java","C","Python","JavaScript"],correct:"JavaScript"},
-        {question:"What year was JavaScript launched?",choices:["1996","1995","1994","None of the above"],correct:"1995"}
-      ]
+  {question:"Java supports ___ through classes and objects?",choices:["Procedural programming","Functional programming","Object-oriented programming","Scripting"],correct:"Object-oriented programming"},
+  {question:"The ___ keyword is used to create a constant in Java?",choices:["const","final","static","immutable"],correct:"final"},
+  {question:"Java uses ___ for automatic memory management?",choices:["Garbage collection","Manual memory management","Reference counting","Smart pointers"],correct:"Garbage collection"},
+  {question:"The ___ method must be implemented by all threads in Java?",choices:["execute()","run()","start()","begin()"],correct:"run()"},
+  {question:"In Java, ___ is used to handle runtime exceptions?",choices:["try-catch","throws","throw","All of the above"],correct:"All of the above"},
+  {question:"The ___ interface is the root of the Java collection hierarchy?",choices:["List","Set","Collection","Map"],correct:"Collection"},
+  {question:"Java's ___ feature allows one interface to have multiple implementations?",choices:["Abstraction","Polymorphism","Encapsulation","Inheritance"],correct:"Polymorphism"},
+  {question:"The ___ operator is used for object type comparison in Java?",choices:["==","equals()","instanceof","compare()"],correct:"instanceof"},
+  {question:"Java's ___ modifier restricts access to the same package only?",choices:["private","protected","public","default"],correct:"default"},
+  {question:"The ___ method is used to compare strings for content equality in Java?",choices:["==","equals()","compareTo()","contentEquals()"],correct:"equals()"}
+]
     };
 
     const type=localStorage.getItem("quizType")||"javascript";
