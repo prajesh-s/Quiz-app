@@ -27,10 +27,17 @@
 
     // Quiz data by category
     const quizzes = {
-      python: [
-        {question:"Which keyword defines a function in Python?",choices:["func","define","def","function"],correct:"def"},
-        {question:"What is the output of len('Hello')?",choices:["5","4","6","Error"],correct:"5"}
-      ],
+      const pythonQuestions = [
+  {question:"What is the output of len('Hello')?",choices:["5","4","6","Error"],correct:"5"},
+  {question:"Which keyword is used to define a function in Python?",choices:["func","def","function","lambda"],correct:"def"},
+  {question:"What is the correct file extension for Python files?",choices:[".py",".pt",".pyt",".pyth"],correct:".py"},
+  {question:"Which of the following is a mutable data type in Python?",choices:["tuple","list","string","frozenset"],correct:"list"},
+  {question:"What will be the output of 3 ** 2 in Python?",choices:["6","9","8","Error"],correct:"9"},
+  {question:"Which built-in function returns the type of an object?",choices:["typeof()","type()","class()","objectType()"],correct:"type()"},
+  {question:"How do you insert COMMENTS in Python code?",choices:["/* comment */","// comment","# comment","<-- comment -->"],correct:"# comment"},
+  {question:"Which of the following is used to handle exceptions in Python?",choices:["try/except","do/catch","catch/handle","error/except"],correct:"try/except"},
+  {question:"What is the output of bool(0)?",choices:["True","False","0","Error"],correct:"False"}
+],
       java: [
         {question:"Java is ___ typed language?",choices:["Weakly","Strongly","Dynamically","None"],correct:"Strongly"},
         {question:"Which keyword is used to inherit a class?",choices:["this","extends","super","implements"],correct:"extends"}
